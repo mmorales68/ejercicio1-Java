@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class persona{
     Scanner reader = new Scanner(System.in);
     public int edad;
+    public int numFavorito;
 
 
     public persona() {
@@ -10,8 +11,15 @@ public class persona{
     }
 
     public void setEdad() {
-        //Scanner reader = new Scanner(System.in);
         this.edad = reader.nextInt();
+    }
+
+    public void setNumFavorito() {
+        this.numFavorito = reader.nextInt();
+    }
+
+    public boolean getNumFavorito() {
+        return numFavorito % 2==0;
     }
 
     public boolean mayorEdad(){
