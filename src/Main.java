@@ -18,6 +18,7 @@ public class Main {
                     4 Factorial de un numero entero
                     5 Numeros impares con for
                     6 Numeros impares con while
+                    7 Dias de la semana con switch
                     
                     0 Salir del programa
                     """);
@@ -59,6 +60,10 @@ public class Main {
                 case 6:
                     persona1.imparesWhile();
                     break;
+                case 7:
+                    persona1.diaSemana();
+                    break;
+
                 case 0:break;
                 default:System.out.println("Opcion invalida\n");
             }

@@ -83,4 +83,32 @@ public class persona{
         }
     }
 
+    public void diaSemana() {
+
+        int numero = 0;
+        System.out.print("Ingrese un numero del 1 al 5\n");
+        numero = reader.nextInt();
+
+        switch(numero) {
+            case 1:
+                System.out.print("Lunes\n");
+                break;
+            case 2:
+                System.out.print("Martes\n");
+                break;
+            case 3:
+                System.out.print("Miercoles\n");
+                break;
+            case 4:
+                System.out.print("Jueves\n");
+                break;
+            case 5:
+                System.out.print("Viernes\n");
+                break;
+            default:System.out.println("El numero "+numero+" no es valido\n");
+        }
+
+
+    }
+
 }
