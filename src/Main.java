@@ -7,11 +7,18 @@ public class Main {
         Scanner scanner=new Scanner(System.in);
 
         while(true) {
+
             System.out.println("""
+                    
                     Ingrese una de las siguientes opciones:
+                    
                     1 Calculo de la mayoria de edad
                     2 Determinar el numero mayor
                     3 Calcular si un numero es par o impar
+                    4 Factorial de un numero entero
+                    5 Numeros impares con for
+                    6 Numeros impares con while
+                    
                     0 Salir del programa
                     """);
             int seleccion = scanner.nextInt();
@@ -43,8 +50,20 @@ public class Main {
                         System.out.print("El numero ingresado es impar \n");
                     }
                     break;
+                case 4:
+                    persona1.factorial();
+                    break;
+                case 5:
+                    persona1.impares();
+                    break;
+                case 6:
+                    persona1.imparesWhile();
+                    break;
+                case 0:break;
+                default:System.out.println("Opcion invalida\n");
             }
             if(seleccion==0){break;}
+
         }
         scanner.close();
     }
